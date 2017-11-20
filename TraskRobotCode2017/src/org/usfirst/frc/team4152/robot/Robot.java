@@ -59,7 +59,7 @@ public class Robot extends IterativeRobot {
 	 * This function is run once each time the robot enters autonomous mode
 	 */
 	@Override
-	public void autonomousInit() {
+	public void autonomousInit() {//resets sensors used in autonomous
 		timer.reset();
 		timer.start();
 		Encoder.reset();
@@ -74,10 +74,10 @@ public class Robot extends IterativeRobot {
 		// Code included for accelerometer included
 		
 		
-		// Drive for 5.2 seconds
+		// Drive for 3.0 seconds
 		
 		if (timer.get() < 3.0) {
-			myRobot.drive(-0.4, 0.0); // drive forwards fifth speed
+			myRobot.drive(-0.4, 0.0); // drive forwards at two-fifth speed
 			timesCalled++;
 			
 			//Update Smartboard variables
@@ -97,9 +97,6 @@ public class Robot extends IterativeRobot {
 		
 			
 		}
-		
-
-		//System.out.println("accell = "+ accel(x,y,z));
 		
 	}
 
