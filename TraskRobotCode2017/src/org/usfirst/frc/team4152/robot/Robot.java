@@ -29,7 +29,7 @@ public class Robot extends IterativeRobot {
 	Joystick stick = new Joystick(0);
 	//Note to self: get input from other joystick for fun
 	
-	Timer timer = new Timer();// keep track of timme for autonomous
+	Timer timer = new Timer();// keep track of time for autonomous
 	
 	int timesCalled = 0;//Used for troubleshooting
 	
